@@ -86,7 +86,7 @@ if ( ! class_exists( 'Gallery_Class' ) ) {
 		}
 
 		add_action( 'admin_init', array( gallery_class_plugin(), 'admin_init' ) );
-		add_filter( 'post_gallery', array( gallery_class_plugin(), 'gallery_shortcode' ), 20, 3 );
+		add_filter( 'post_gallery', array( gallery_class_plugin(), 'gallery_shortcode' ), 10000, 3 );
 
 	}
 
